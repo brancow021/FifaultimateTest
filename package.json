@@ -1,0 +1,22 @@
+{
+  "name": "fifaultimate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js",
+    "db": "node insertsDataDatabase.js",
+    "production": "npm run db & npm start"
+  },
+  "author": "Brandon Rodriguez Torres",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10",
+    "mongoose-paginate-v2": "^1.3.18",
+    "node-fetch": "^2.6.1"
+  }
+}

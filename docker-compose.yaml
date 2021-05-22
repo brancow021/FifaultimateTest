@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  mongo:
+    image: mongo
+    ports:
+      - '27017:27017'
+
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    links:
+      - mongo
+   #  restart: always
+    command: npm run db
