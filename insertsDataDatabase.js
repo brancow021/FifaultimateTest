@@ -18,7 +18,7 @@ class UploadDatabase {
 			let response = await this.getPlayers().then((res) => res.json());
 			let numberpages = response?.totalPages;
 
-			for (let index = 1; index < 10; index++) {
+			for (let index = 1; index < numberpages; index++) {
 				let data = await this.getPlayers(index).then((res) => res.json());
 
 				data.items.map((data) => {
