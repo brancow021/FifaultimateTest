@@ -7,7 +7,6 @@
 
 **docker-compose up**
 
-# Instalacion
 ## Node server
 ###### Ingresar los siguientes comandos:
 
